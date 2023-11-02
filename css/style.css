@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  font-family: "Karla", sans-serif;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+main {
+  height: 100vh;
+  background-color: var(--Light-Gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 525px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    max-width: 700px;
+  }
+}
+.container__text {
+  padding: 30px 20px;
+}
+@media (min-width: 525px) {
+  .container__text {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 525px) {
+  .one {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+}
+.one__titel {
+  color: var(--Cyan);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.one__head {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--Bright-Yellow);
+}
+.one__par {
+  color: var(--Grayish-Blue);
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 525px) {
+  .one__par {
+    width: 500px;
+  }
+}
+
+.two {
+  background-color: var(--Cyan);
+  padding: 2.5rem;
+  color: white;
+}
+.two__titel {
+  margin-bottom: 15px;
+}
+.two__price {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.two__price--bold {
+  font-size: 30px;
+}
+.two__price--thin {
+  color: var(--Light-Gray);
+  opacity: 0.6;
+}
+.two__btn {
+  margin-top: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 13px 0;
+  background-color: var(--Bright-Yellow);
+  color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.three {
+  background-color: hsla(179, 62%, 43%, 0.658);
+  padding: 2.5rem;
+}
+.three__titel {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.three__list {
+  color: var(--Light-Gray);
+  opacity: 0.8;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+footer a, footer a:active, footer a:visited {
+  color: var(--Cyan);
+}/*# sourceMappingURL=style.css.map */

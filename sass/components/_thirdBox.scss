@@ -1,0 +1,13 @@
+.three{
+    background-color:hsla(179, 62%, 43%, 0.658) ;
+    padding: 2.5rem ;
+    &__titel{
+        color: white;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    &__list{
+        color: var(--Light-Gray) ;
+        opacity: 0.8;
+    }
+}

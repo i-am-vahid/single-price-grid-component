@@ -1,0 +1,29 @@
+.two{
+    background-color: var(--Cyan);
+    padding: 2.5rem;
+    color: white;
+    &__titel{
+        margin-bottom: 15px;
+    }
+    &__price{
+        margin-bottom: 5px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        &--bold {
+            font-size: 30px;
+        }
+        &--thin{color: var(--Light-Gray);opacity: 0.6;}
+    }
+    &__btn{
+        margin-top: 35px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 13px 0;
+        background-color: var(--Bright-Yellow);
+        color: white;
+        box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2);
+        border-radius: 5px;
+    }
+}
